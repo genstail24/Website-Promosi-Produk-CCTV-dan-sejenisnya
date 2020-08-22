@@ -1,0 +1,245 @@
+/* reset */
+body{
+	background-color: lightgrey;
+}
+
+
+/* scroll bar */
+::-webkit-scrollbar {
+    height: 12px;
+    width: 12px;
+    background-color: white;
+    /*background: red;*/
+}
+::-webkit-scrollbar-thumb {
+    height: 15px;
+    border-radius: 8px;
+    /*background: black;*/
+    background-color: black;
+}
+
+
+
+/*navbar*/
+.navbar{
+	background-color: #EEEEEE;
+}
+
+.nav-left{
+	display: flex;
+	justify-content: center !important;
+}
+
+.svgatas svg{
+	margin-right: 20px;
+	margin-left: 20px; 
+}
+
+.jumbotron{
+	min-height: 540px;/*
+	display: flex;
+	align-items: center;*/
+}
+
+/*product*/
+.card-group{
+	width: 100%;
+}
+
+.my-card{
+	width: 200px;
+
+}
+
+.float-btn{
+	position: fixed !important;
+	bottom: 20px;
+	right: 20px;
+	padding: 0px !important;
+	font-size: 80px;
+	color: green;
+	z-index: 99;
+	transition: .5s;
+}
+
+.float-btn:hover{
+	background-color: green;
+	opacity: .2;
+}
+
+/*marque*/
+.batas{
+	width: 100%;
+	height: 50px;
+	background-color: black;
+}
+.batas p{
+	margin-top: 7px;
+	font-size: 20px;
+	font-weight: bold;
+	color: white;
+	background-color: black;
+}
+
+.img-caption p{
+	color: white;
+}
+.img-caption h3{
+	color: white;
+}
+
+/*footer*/
+footer{
+	bottom: 0;
+	width: 100%;
+	height: 75px;
+	background-color: #333;
+	padding-top: 25px;
+}
+footer p{
+	font-size: 0,9em;
+	color: #aaa; 
+}
+footer p svg{
+	color: red;
+}
+
+/* icons */
+.social-media i{
+	font-size: 50px;
+	margin: 0px 5px;
+}
+
+.social-media .ig{
+	color: pink;
+}
+
+.fa-whatsapp{
+	/*color: green;*/
+}
+
+
+/*konten*/
+.konten svg{
+	color: black;
+}
+.konten {
+	padding-bottom: 50px;
+}
+.konten h2{
+	padding-top: 20px;
+}
+.konten hr{
+	width: 200px;
+	border-top: 4px solid black;
+}
+/**/
+/* about */
+.about small{
+	font-size: 20px;
+}
+.about i{
+	margin-right: 5px;
+}
+
+
+.tentang{
+	background-image: url(../img/p2.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	background-attachment: fixed;
+}
+.tentang hr{
+	width: 200px;
+	border-top: 4px solid white;
+}
+.contact{
+	padding-top: 50px;
+	padding-bottom: 50px;
+	background-color: #EEEEEE;
+}
+.contact h3{
+	padding-bottom: 10px;
+}
+/*
+.embed{
+	display: block;
+	margin-bottom: 100px;
+}*/
+
+/*product*/
+.product{
+	background-color: white;
+}
+.product hr{
+	border-top: 4px solid black;
+	width: 300px;
+	opacity: 50%;
+}
+.card-group{
+	padding-bottom: 50px;
+	padding-top: 20px;
+}
+.product h2{
+	padding-top: 50px;
+}
+
+
+
+/* loadin animation*/
+.loading{
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	z-index: 1;
+}
+
+.loading p{
+	color: #fff;
+}
+.lds-hourglass {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-hourglass:after {
+  content: " ";
+  display: block;
+  border-radius: 50%;
+  width: 0;
+  height: 0;
+  margin: 8px;
+  box-sizing: border-box;
+  border: 32px solid #fff;
+  border-color: #fff transparent #fff transparent;
+  animation: lds-hourglass 1.2s infinite;
+}
+@keyframes lds-hourglass {
+  0% {
+    transform: rotate(0);
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  }
+  50% {
+    transform: rotate(900deg);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+  100% {
+    transform: rotate(1800deg);
+  }
+}
+
+
+/*ukuran desktop*/
+@media (min-width: 992px){
+	/*navbar*/
+	.nav-left{
+	display: flex;
+	justify-content: flex-end !important;
+}
+}
